@@ -1,0 +1,90 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #2d2d2d;
+    font-family: 'Consolas', monospace;
+}
+
+.hidden {
+    display: none !important;
+}
+
+#fake-terminal {
+    width: 800px;
+    height: 500px;
+    background-color: #1e1e1e;
+    border-radius: 6px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    overflow: hidden;
+}
+
+.terminal-header {
+    background-color: #323233;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    position: relative;
+}
+
+.terminal-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.terminal-button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.close {
+    background-color: #ff5f56;
+}
+
+.minimize {
+    background-color: #ffbd2e;
+}
+
+.maximize {
+    background-color: #27c93f;
+}
+
+.terminal-title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #9a9a9a;
+}
+
+.terminal-body {
+    padding: 20px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.terminal-body p {
+    margin: 5px 0;
+}
+
+#game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+#gameCanvas {
+    background-color: #1e1e1e;
+    border: 2px solid #444;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}

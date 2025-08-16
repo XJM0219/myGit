@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="fake-terminal">
+        <div class="terminal-header">
+            <div class="terminal-buttons">
+                <span class="terminal-button close"></span>
+                <span class="terminal-button minimize"></span>
+                <span class="terminal-button maximize"></span>
+            </div>
+            <div class="terminal-title">bash</div>
+        </div>
+        <div class="terminal-body">
+            <p>> npm install</p>
+            <p>+ lodash@4.17.21</p>
+            <p>added 1 package from 1 contributor and audited 1 package in 0.53s</p>
+            <p>found 0 vulnerabilities</p>
+            <p>> </p>
+        </div>
+    </div>
+    <div id="game-container" class="hidden">
+        <h1>Snake Game</h1>
+        <canvas id="gameCanvas" width="400" height="400"></canvas>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
